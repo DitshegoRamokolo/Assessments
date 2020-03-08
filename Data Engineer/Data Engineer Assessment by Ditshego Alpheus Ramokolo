@@ -1,0 +1,20 @@
+Exceptions:
+data_engineer_dirty_set_1.csv has unclean columns and it has 14 columns instead of 11 columns.
+It also has tran_hash, gender, tran_id, tran_lat and tran_long as the only columns with full entries.
+The format of each column and language is different from complete columns.
+There symbols in the data, text files need texts and delimiter only.
+first_name, last_name, tran_date, value, tran_type and tran_status have empty.
+
+Causes:
+Not using a standard format for entries and using different language in the same dataset.
+Not restricting symbols in a dataset that requires letters.
+Accepting null values on entries that are important.
+Not creating ETL processes make sure that the data gets into the data warehouse and it meets the requirements.
+Not having a RDBMS to enable updated, creations, administering and interaction of relational databases.
+
+Solutions:
+Using ETL that keeps and maintains the integrity of the data and maintaining standard format.
+Data normalization would also be helpful to avoid dependencies that create anomalies when new data is updated.
+Building and maintaining Data Warehouse.
+Using Clouds for flexibility, to leverage auto-scaling and build a self-managing infrastructure aligned closely to actual needs.
+Automating most of the processes to improve data processing using some of the common patterns.
