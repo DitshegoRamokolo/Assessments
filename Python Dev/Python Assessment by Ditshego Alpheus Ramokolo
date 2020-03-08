@@ -27,11 +27,12 @@ for i in colours:
 for i, e in enumerate (colours): #enumerate is efficient here
     print(i, colours[i])
 
+min_length = min(len(colours),
+                     len(fruits))
 for i in range(min_length): #All the codes look better under the For statement, also no need to change it
     print(colours[i],
           fruits[i])
-    min_length = min(len(colours),
-                     len(fruits))
+    
 
 apple=a=0
 banana=b=1
