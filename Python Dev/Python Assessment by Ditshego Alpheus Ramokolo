@@ -1,0 +1,68 @@
+Section 1: Performance
+Changing the time.sleep time will speed up or delay the function
+
+import time
+def get_resource_identifier(name):
+    time.sleep(0.0000001)#simulate the delay
+    if name is 'foo':
+        return 'L9UKvnomjq'
+    if name is 'bar':
+        return '7U9eyOv7M'
+    return 'Not found'
+
+for _ in range(0,100):
+    print(get_resource_identifier('foo'))
+    print(get_resource_identifier('bar'))
+    print(get_resource_identifier('foo'))
+    print(get_resource_identifier('zoo'))
+    print(get_resource_identifier('bar'))
+
+Section 2: Refactor
+colours = ['blue','green','yellow','black','orange']
+fruits = ['berry','apple','banana','currant']
+
+for i in colours:
+    print(i)
+
+for i, e in enumerate (colours): #enumerate is efficient here
+    print(i, colours[i])
+
+for i in range(min_length): #All the codes look better under the For statement, also no need to change it
+    print(colours[i],
+          fruits[i])
+    min_length = min(len(colours),
+                     len(fruits))
+
+apple=a=0
+banana=b=1
+currant=c=2
+berry=d=3
+colours=e=4
+fruits=f=5
+green=g=6
+if a <= b and f <= g and c<=d and d<=f and b<=c:
+    print('pass')
+else:
+    print('fail')
+
+Task 1: 
+
+blue=a=0
+green=b=1
+yellow=c=2
+black=d=3
+orange=e=4
+fruits=f=5
+colours=g=6
+if a <= b and f <= g and c<=d and d<=f and b<=c:
+    print('pass')
+else:
+    print('fail')
+
+Task 2:
+
+first = set([2,2,5,6,7,2,1,8,9,9])
+second = set([2,1,5,6,66,7,77])
+answer=first.symmetric_difference(second)
+print(answer)
+sorted(answer)
